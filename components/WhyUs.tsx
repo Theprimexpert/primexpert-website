@@ -56,7 +56,7 @@ export default function WhyUs() {
               <span className="gradient-text">worth your trust.</span>
             </h2>
           </div>
-          <p className="text-white/32 text-base max-w-xs leading-relaxed">
+          <p className="text-white/55 text-base max-w-xs leading-relaxed">
             Anyone can say they deliver results. Here&apos;s how we actually
             earn the right to say it — and keep earning it.
           </p>
@@ -72,13 +72,13 @@ export default function WhyUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08, duration: 0.5 }}
-                className="shine glass rounded-2xl p-7 hover:border-white/12 transition-all duration-300 group"
+                className="shine rounded-2xl p-7 border border-white/8 bg-white/5 hover:bg-white/8 hover:border-white/15 transition-all duration-300 group backdrop-blur-sm"
               >
                 <div className="w-10 h-10 rounded-xl bg-[#1E6FCC]/8 flex items-center justify-center mb-5 group-hover:bg-[#1E6FCC]/16 transition-colors">
                   <Icon size={18} className="text-[#1E6FCC]" />
                 </div>
                 <h3 className="text-white font-bold text-sm mb-2.5 leading-snug">{r.title}</h3>
-                <p className="text-white/33 text-sm leading-relaxed">{r.desc}</p>
+                <p className="text-white/60 text-sm leading-relaxed">{r.desc}</p>
               </motion.div>
             );
           })}
