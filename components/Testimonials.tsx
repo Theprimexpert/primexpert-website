@@ -33,7 +33,7 @@ export default function Testimonials() {
   return (
     <section className="py-28 bg-[#080d1a] relative overflow-hidden">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/8 to-transparent" />
-      <div className="absolute right-1/4 top-1/3 w-64 h-64 bg-[#1B2A6B]/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute right-1/4 top-1/3 w-64 h-64 bg-[#1a2761]/15 rounded-full blur-3xl pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <motion.div
@@ -42,7 +42,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-[#3B9FD4] text-sm font-semibold uppercase tracking-widest mb-4">Client Results</p>
+          <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">Client Results</p>
           <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
             Real businesses.{" "}
             <span className="gradient-text">Real outcomes.</span>
@@ -65,12 +65,12 @@ export default function Testimonials() {
             >
               <div className="flex gap-0.5 mb-5">
                 {Array(r.rating).fill(0).map((_, j) => (
-                  <Star key={j} size={13} className="text-[#3B9FD4] fill-[#3B9FD4]" />
+                  <Star key={j} size={13} className="text-[#1E6FCC] fill-[#1E6FCC]" />
                 ))}
               </div>
 
               {/* Result badge */}
-              <div className="inline-flex items-center gap-2 bg-[#3B9FD4]/10 border border-[#3B9FD4]/20 text-[#3B9FD4] text-xs font-semibold px-3 py-1.5 rounded-full mb-5 self-start">
+              <div className="inline-flex items-center gap-2 bg-[#1E6FCC]/10 border border-[#1E6FCC]/20 text-[#1E6FCC] text-xs font-semibold px-3 py-1.5 rounded-full mb-5 self-start">
                 {r.result}
               </div>
 

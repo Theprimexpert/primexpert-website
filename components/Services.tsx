@@ -64,7 +64,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <p className="text-[#3B9FD4] text-sm font-semibold uppercase tracking-widest mb-4">What We Do</p>
+          <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">What We Do</p>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight max-w-xl">
               Six ways we put
@@ -96,10 +96,10 @@ export default function Services() {
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center gap-5 px-2 py-6 text-left group"
                 >
-                  <span className={`text-xs font-mono font-bold tracking-widest w-10 shrink-0 transition-colors ${isOpen ? "text-[#3B9FD4]" : "text-white/18 group-hover:text-white/35"}`}>
+                  <span className={`text-xs font-mono font-bold tracking-widest w-10 shrink-0 transition-colors ${isOpen ? "text-[#1E6FCC]" : "text-white/18 group-hover:text-white/35"}`}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#3B9FD4]" : "bg-white/5 group-hover:bg-white/8"}`}>
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1E6FCC]" : "bg-white/5 group-hover:bg-white/8"}`}>
                     <Icon size={18} className={isOpen ? "text-white" : "text-white/45"} />
                   </div>
                   <div className="flex-1 flex items-center justify-between gap-4">
@@ -110,7 +110,7 @@ export default function Services() {
                       {svc.tag}
                     </span>
                   </div>
-                  <div className={`w-7 h-7 rounded-full border flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "border-[#3B9FD4] text-[#3B9FD4]" : "border-white/10 text-white/28"}`}>
+                  <div className={`w-7 h-7 rounded-full border flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "border-[#1E6FCC] text-[#1E6FCC]" : "border-white/10 text-white/28"}`}>
                     {isOpen ? <Minus size={13} /> : <Plus size={13} />}
                   </div>
                 </button>
@@ -131,7 +131,7 @@ export default function Services() {
                         <ul className="flex-shrink-0 sm:w-56 grid grid-cols-1 gap-2.5">
                           {svc.features.map((f) => (
                             <li key={f} className="flex items-start gap-2.5 text-sm text-white/50">
-                              <div className="w-1.5 h-1.5 rounded-full bg-[#3B9FD4] shrink-0 mt-1.5" />
+                              <div className="w-1.5 h-1.5 rounded-full bg-[#1E6FCC] shrink-0 mt-1.5" />
                               {f}
                             </li>
                           ))}

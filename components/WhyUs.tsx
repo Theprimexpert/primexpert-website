@@ -39,7 +39,7 @@ export default function WhyUs() {
   return (
     <section id="why-us" className="py-28 bg-[#03060f] relative">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#3B9FD4]/6 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#1E6FCC]/6 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <motion.div
@@ -49,7 +49,7 @@ export default function WhyUs() {
           className="mb-16 flex flex-col lg:flex-row lg:items-end gap-6"
         >
           <div className="flex-1">
-            <p className="text-[#3B9FD4] text-sm font-semibold uppercase tracking-widest mb-4">Why PrimeXpert</p>
+            <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">Why PrimeXpert</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
               What makes us
               <br />
@@ -74,8 +74,8 @@ export default function WhyUs() {
                 transition={{ delay: i * 0.08, duration: 0.5 }}
                 className="shine glass rounded-2xl p-7 hover:border-white/12 transition-all duration-300 group"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#3B9FD4]/8 flex items-center justify-center mb-5 group-hover:bg-[#3B9FD4]/16 transition-colors">
-                  <Icon size={18} className="text-[#3B9FD4]" />
+                <div className="w-10 h-10 rounded-xl bg-[#1E6FCC]/8 flex items-center justify-center mb-5 group-hover:bg-[#1E6FCC]/16 transition-colors">
+                  <Icon size={18} className="text-[#1E6FCC]" />
                 </div>
                 <h3 className="text-white font-bold text-sm mb-2.5 leading-snug">{r.title}</h3>
                 <p className="text-white/33 text-sm leading-relaxed">{r.desc}</p>

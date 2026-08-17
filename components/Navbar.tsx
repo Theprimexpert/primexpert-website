@@ -34,10 +34,10 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2.5 group">
             <div className="relative w-9 h-9 rounded-lg overflow-hidden bg-white p-0.5">
-              <Image src="/logo.jpg" alt="PrimeXpert" fill className="object-contain" />
+              <Image src="/logo.png" alt="PrimeXpert" fill className="object-contain" />
             </div>
             <span className="font-bold text-lg tracking-tight text-white">
-              prime<span className="text-[#3B9FD4]">Xpert</span>
+              prime<span className="text-[#1E6FCC]">Xpert</span>
             </span>
           </a>
 
@@ -65,7 +65,7 @@ export default function Navbar() {
             </a>
             <a
               href="#contact"
-              className="bg-white text-[#03060f] text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#3B9FD4] hover:text-white transition-all duration-200"
+              className="bg-white text-[#03060f] text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-[#1E6FCC] hover:text-white transition-all duration-200"
             >
               Free Consultation
             </a>

@@ -19,10 +19,10 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-5">
               <div className="relative w-9 h-9 rounded-lg overflow-hidden bg-white p-0.5">
-                <Image src="/logo.jpg" alt="PrimeXpert" fill className="object-contain" />
+                <Image src="/logo.png" alt="PrimeXpert" fill className="object-contain" />
               </div>
               <span className="font-bold text-lg text-white">
-                prime<span className="text-[#3B9FD4]">Xpert</span>
+                prime<span className="text-[#1E6FCC]">Xpert</span>
               </span>
             </div>
             <p className="text-white/30 text-sm leading-relaxed max-w-xs mb-6">
@@ -30,14 +30,14 @@ export default function Footer() {
               increase visibility, and achieve measurable results online.
             </p>
             <div className="space-y-2.5">
-              <a href="tel:+14435108100" className="flex items-center gap-2.5 text-white/35 hover:text-[#3B9FD4] text-sm transition-colors">
+              <a href="tel:+14435108100" className="flex items-center gap-2.5 text-white/35 hover:text-[#1E6FCC] text-sm transition-colors">
                 <Phone size={13} /> +1 (443) 510-8100
               </a>
               <div className="flex items-start gap-2.5 text-white/35 text-sm">
                 <MapPin size={13} className="mt-0.5 shrink-0" />
                 110 Margaret St, Burkburnett TX 76354
               </div>
-              <a href="mailto:info@primexpert.com" className="flex items-center gap-2.5 text-white/35 hover:text-[#3B9FD4] text-sm transition-colors">
+              <a href="mailto:info@primexpert.com" className="flex items-center gap-2.5 text-white/35 hover:text-[#1E6FCC] text-sm transition-colors">
                 <Mail size={13} /> info@primexpert.com
               </a>
             </div>
@@ -72,7 +72,7 @@ export default function Footer() {
             <div className="mt-8">
               <a
                 href="#contact"
-                className="inline-block bg-white/8 border border-white/10 hover:bg-[#3B9FD4] hover:border-[#3B9FD4] text-white text-xs font-semibold px-5 py-2.5 rounded-full transition-all duration-200"
+                className="inline-block bg-white/8 border border-white/10 hover:bg-[#1E6FCC] hover:border-[#1E6FCC] text-white text-xs font-semibold px-5 py-2.5 rounded-full transition-all duration-200"
               >
                 Free Consultation
               </a>

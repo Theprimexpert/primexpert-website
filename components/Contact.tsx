@@ -25,7 +25,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-28 bg-[#03060f] relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" />
-      <div className="absolute bottom-0 right-1/3 w-[500px] h-[300px] bg-[#1B2A6B]/12 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/3 w-[500px] h-[300px] bg-[#1a2761]/12 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <motion.div
@@ -34,7 +34,7 @@ export default function Contact() {
           viewport={{ once: true }}
           className="mb-16 text-center"
         >
-          <p className="text-[#3B9FD4] text-sm font-semibold uppercase tracking-widest mb-4">Free Strategy Call</p>
+          <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">Free Strategy Call</p>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-4">
             Let&apos;s talk about
             <br />
@@ -48,7 +48,7 @@ export default function Contact() {
           <ul className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
             {benefits.map((b) => (
               <li key={b} className="flex items-center gap-2 text-sm text-white/40">
-                <CheckCircle size={14} className="text-[#3B9FD4] shrink-0" />
+                <CheckCircle size={14} className="text-[#1E6FCC] shrink-0" />
                 {b}
               </li>
             ))}
@@ -73,8 +73,8 @@ export default function Contact() {
                 href={href}
                 className="flex items-start gap-4 glass rounded-xl p-5 hover:border-white/12 transition-all duration-200 group"
               >
-                <div className="w-9 h-9 rounded-lg bg-[#3B9FD4]/10 flex items-center justify-center shrink-0 group-hover:bg-[#3B9FD4]/20 transition-colors">
-                  <Icon size={15} className="text-[#3B9FD4]" />
+                <div className="w-9 h-9 rounded-lg bg-[#1E6FCC]/10 flex items-center justify-center shrink-0 group-hover:bg-[#1E6FCC]/20 transition-colors">
+                  <Icon size={15} className="text-[#1E6FCC]" />
                 </div>
                 <div>
                   <div className="text-white/28 text-xs mb-0.5">{label}</div>
@@ -99,7 +99,7 @@ export default function Contact() {
                   <span className="text-white/18">Closed</span>
                 </div>
               </div>
-              <div className="mt-4 pt-3 border-t border-white/6 text-xs text-[#3B9FD4] pulse-dot">
+              <div className="mt-4 pt-3 border-t border-white/6 text-xs text-[#1E6FCC] pulse-dot">
                 Answering service live 24/7
               </div>
             </div>
@@ -115,8 +115,8 @@ export default function Contact() {
           >
             {sent ? (
               <div className="glass rounded-2xl p-14 flex flex-col items-center text-center">
-                <div className="w-14 h-14 rounded-full bg-[#3B9FD4]/15 flex items-center justify-center mb-5">
-                  <CheckCircle size={24} className="text-[#3B9FD4]" />
+                <div className="w-14 h-14 rounded-full bg-[#1E6FCC]/15 flex items-center justify-center mb-5">
+                  <CheckCircle size={24} className="text-[#1E6FCC]" />
                 </div>
                 <h3 className="text-2xl font-black text-white mb-2">You&apos;re on our radar.</h3>
                 <p className="text-white/38 text-sm max-w-xs">
@@ -140,7 +140,7 @@ export default function Contact() {
                         placeholder={f.placeholder}
                         value={form[f.name as keyof typeof form]}
                         onChange={handleChange}
-                        className="w-full bg-white/4 border border-white/8 rounded-xl px-4 py-3 text-white text-sm placeholder-white/18 focus:outline-none focus:border-[#3B9FD4]/50 focus:bg-white/6 transition-all"
+                        className="w-full bg-white/4 border border-white/8 rounded-xl px-4 py-3 text-white text-sm placeholder-white/18 focus:outline-none focus:border-[#1E6FCC]/50 focus:bg-white/6 transition-all"
                       />
                     </div>
                   ))}
@@ -154,7 +154,7 @@ export default function Contact() {
                       placeholder="+1 (555) 000-0000"
                       value={form.phone}
                       onChange={handleChange}
-                      className="w-full bg-white/4 border border-white/8 rounded-xl px-4 py-3 text-white text-sm placeholder-white/18 focus:outline-none focus:border-[#3B9FD4]/50 focus:bg-white/6 transition-all"
+                      className="w-full bg-white/4 border border-white/8 rounded-xl px-4 py-3 text-white text-sm placeholder-white/18 focus:outline-none focus:border-[#1E6FCC]/50 focus:bg-white/6 transition-all"
                     />
                   </div>
                   <div>
@@ -163,7 +163,7 @@ export default function Contact() {
                       name="service"
                       value={form.service}
                       onChange={handleChange}
-                      className="w-full bg-white/4 border border-white/8 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#3B9FD4]/50 focus:bg-white/6 transition-all appearance-none"
+                      className="w-full bg-white/4 border border-white/8 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-[#1E6FCC]/50 focus:bg-white/6 transition-all appearance-none"
                     >
                       <option value="" className="bg-[#080d1a]">What do you need most?</option>
                       {[
@@ -188,12 +188,12 @@ export default function Contact() {
                     value={form.message}
                     onChange={handleChange}
                     placeholder="What do you sell, who are your customers, and what's the #1 thing holding your business back right now?"
-                    className="w-full bg-white/4 border border-white/8 rounded-xl px-4 py-3 text-white text-sm placeholder-white/18 focus:outline-none focus:border-[#3B9FD4]/50 focus:bg-white/6 transition-all resize-none"
+                    className="w-full bg-white/4 border border-white/8 rounded-xl px-4 py-3 text-white text-sm placeholder-white/18 focus:outline-none focus:border-[#1E6FCC]/50 focus:bg-white/6 transition-all resize-none"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center gap-2 bg-white text-[#03060f] font-bold py-4 rounded-xl hover:bg-[#3B9FD4] hover:text-white transition-all duration-200 hover:shadow-[0_0_30px_rgba(59,159,212,0.25)]"
+                  className="w-full flex items-center justify-center gap-2 bg-white text-[#03060f] font-bold py-4 rounded-xl hover:bg-[#1E6FCC] hover:text-white transition-all duration-200 hover:shadow-[0_0_30px_rgba(30,111,204,0.25)]"
                 >
                   Book My Free Strategy Call
                   <ArrowRight size={16} />

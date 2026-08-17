@@ -12,7 +12,7 @@ const pillars = [
 export default function About() {
   return (
     <section id="about" className="py-28 bg-[#080d1a] relative overflow-hidden">
-      <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#1B2A6B]/12 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#1a2761]/12 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
         <div className="flex flex-col lg:flex-row gap-20 items-center">
@@ -25,7 +25,7 @@ export default function About() {
             transition={{ duration: 0.7 }}
             className="flex-1"
           >
-            <p className="text-[#3B9FD4] text-sm font-semibold uppercase tracking-widest mb-4">About PrimeXpert</p>
+            <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">About PrimeXpert</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
               We built this agency
               <br />
@@ -61,7 +61,7 @@ export default function About() {
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-white text-[#03060f] font-bold text-sm px-6 py-3.5 rounded-full hover:bg-[#3B9FD4] hover:text-white transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-white text-[#03060f] font-bold text-sm px-6 py-3.5 rounded-full hover:bg-[#1E6FCC] hover:text-white transition-all duration-200"
             >
               Let&apos;s Talk About Your Business <ArrowRight size={15} />
             </a>
@@ -84,8 +84,8 @@ export default function About() {
                 transition={{ delay: 0.1 + i * 0.08 }}
                 className="shine glass rounded-2xl p-6 hover:border-white/14 transition-all duration-300 group"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#3B9FD4]/10 flex items-center justify-center mb-4 group-hover:bg-[#3B9FD4]/20 transition-colors">
-                  <Icon size={18} className="text-[#3B9FD4]" />
+                <div className="w-10 h-10 rounded-xl bg-[#1E6FCC]/10 flex items-center justify-center mb-4 group-hover:bg-[#1E6FCC]/20 transition-colors">
+                  <Icon size={18} className="text-[#1E6FCC]" />
                 </div>
                 <div className="font-bold text-white text-sm mb-1.5">{label}</div>
                 <div className="text-white/32 text-xs leading-relaxed">{desc}</div>

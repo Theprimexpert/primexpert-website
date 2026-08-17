@@ -15,9 +15,9 @@ export default function Hero() {
     >
       {/* Radial glow */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[700px] h-[500px] rounded-full bg-[#1B2A6B]/25 blur-[120px]" />
+        <div className="w-[700px] h-[500px] rounded-full bg-[#1a2761]/25 blur-[120px]" />
       </div>
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#3B9FD4]/8 blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-[#1E6FCC]/8 blur-[100px] pointer-events-none" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-5 sm:px-8 text-center pt-32 pb-24">
@@ -55,7 +55,7 @@ export default function Hero() {
         <motion.div {...fadeUp(0.3)} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
           <a
             href="#contact"
-            className="flex items-center gap-2 bg-white text-[#03060f] font-bold text-sm px-7 py-4 rounded-full hover:bg-[#3B9FD4] hover:text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(59,159,212,0.35)]"
+            className="flex items-center gap-2 bg-white text-[#03060f] font-bold text-sm px-7 py-4 rounded-full hover:bg-[#1E6FCC] hover:text-white transition-all duration-300 hover:shadow-[0_0_30px_rgba(30,111,204,0.35)]"
           >
             Get a Free Strategy Call
             <ArrowRight size={16} />

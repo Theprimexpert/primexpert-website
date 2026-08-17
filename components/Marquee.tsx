@@ -25,7 +25,7 @@ export default function Marquee() {
             className="flex items-center gap-5 px-6 text-white/28 text-xs font-semibold uppercase tracking-widest whitespace-nowrap"
           >
             {item}
-            <span className="text-[#3B9FD4] text-base">·</span>
+            <span className="text-[#1E6FCC] text-base">·</span>
           </span>
         ))}
       </div>
