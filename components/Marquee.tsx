@@ -14,7 +14,7 @@ const items = [
 export default function Marquee() {
   const doubled = [...items, ...items];
   return (
-    <div className="relative py-7 border-y border-white/6 bg-[#080d1a] overflow-hidden">
+    <div className="relative py-7 border-y border-gray-100 bg-[#f4f7fb] overflow-hidden">
       <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#080d1a] to-transparent z-10 pointer-events-none" />
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#080d1a] to-transparent z-10 pointer-events-none" />
 
@@ -22,7 +22,7 @@ export default function Marquee() {
         {doubled.map((item, i) => (
           <span
             key={i}
-            className="flex items-center gap-5 px-6 text-white/28 text-xs font-semibold uppercase tracking-widest whitespace-nowrap"
+            className="flex items-center gap-5 px-6 text-[#1a2761]/40 text-xs font-semibold uppercase tracking-widest whitespace-nowrap"
           >
             {item}
             <span className="text-[#1E6FCC] text-base">·</span>

@@ -31,7 +31,7 @@ const reviews = [
 
 export default function Testimonials() {
   return (
-    <section className="py-28 bg-[#080d1a] relative overflow-hidden">
+    <section className="py-28 bg-[#f4f7fb] relative overflow-hidden">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/8 to-transparent" />
       <div className="absolute right-1/4 top-1/3 w-64 h-64 bg-[#1a2761]/15 rounded-full blur-3xl pointer-events-none" />
 
@@ -43,11 +43,11 @@ export default function Testimonials() {
           className="text-center mb-16"
         >
           <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">Client Results</p>
-          <h2 className="text-4xl sm:text-5xl font-black text-white mb-4">
+          <h2 className="text-4xl sm:text-5xl font-black text-[#1a2761] mb-4">
             Real businesses.{" "}
             <span className="gradient-text">Real outcomes.</span>
           </h2>
-          <p className="text-white/30 text-base max-w-md mx-auto">
+          <p className="text-[#1a2761]/50 text-base max-w-md mx-auto">
             Not cherry-picked case studies — these are the kinds of results we
             work toward with every single client, every single month.
           </p>
@@ -61,7 +61,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.12 }}
-              className="shine glass rounded-2xl p-7 hover:border-white/12 transition-all duration-300 flex flex-col"
+              className="shine glass rounded-2xl p-7 hover:border-gray-200 transition-all duration-300 flex flex-col"
             >
               <div className="flex gap-0.5 mb-5">
                 {Array(r.rating).fill(0).map((_, j) => (
@@ -74,16 +74,16 @@ export default function Testimonials() {
                 {r.result}
               </div>
 
-              <p className="text-white/48 text-sm leading-[1.85] mb-7 flex-1">
+              <p className="text-[#1a2761]/60 text-sm leading-[1.85] mb-7 flex-1">
                 &ldquo;{r.body}&rdquo;
               </p>
-              <div className="flex items-center gap-3 pt-5 border-t border-white/6">
+              <div className="flex items-center gap-3 pt-5 border-t border-gray-100">
                 <div className={`w-9 h-9 rounded-full bg-gradient-to-br ${r.color} flex items-center justify-center text-white text-xs font-black shrink-0`}>
                   {r.name[0]}
                 </div>
                 <div>
-                  <div className="text-white font-semibold text-sm">{r.name}</div>
-                  <div className="text-white/28 text-xs">{r.role}</div>
+                  <div className="text-[#1a2761] font-semibold text-sm">{r.name}</div>
+                  <div className="text-[#1a2761]/40 text-xs">{r.role}</div>
                 </div>
               </div>
             </motion.div>

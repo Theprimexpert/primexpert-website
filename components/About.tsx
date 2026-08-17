@@ -11,7 +11,7 @@ const pillars = [
 
 export default function About() {
   return (
-    <section id="about" className="py-28 bg-[#080d1a] relative overflow-hidden">
+    <section id="about" className="py-28 bg-[#f4f7fb] relative overflow-hidden">
       <div className="absolute right-0 top-0 w-[500px] h-[500px] bg-[#1a2761]/12 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
@@ -26,20 +26,20 @@ export default function About() {
             className="flex-1"
           >
             <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">About PrimeXpert</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1a2761] leading-tight mb-6">
               We built this agency
               <br />
               <span className="gradient-text">for business owners,</span>
               <br />
               not marketers.
             </h2>
-            <p className="text-white/40 text-base leading-[1.85] mb-5 max-w-lg">
+            <p className="text-[#1a2761]/50 text-base leading-[1.85] mb-5 max-w-lg">
               PrimeXpert was founded on one frustration: too many marketing
               agencies were great at looking busy but terrible at driving
               actual business growth. Fancy dashboards, bloated retainers,
               and results that never quite materialized.
             </p>
-            <p className="text-white/40 text-base leading-[1.85] mb-10 max-w-lg">
+            <p className="text-[#1a2761]/50 text-base leading-[1.85] mb-10 max-w-lg">
               We do things differently. Based in Burkburnett, TX, our team
               of specialists works as a true extension of your business —
               accountable to your revenue goals, not our billable hours. When
@@ -53,15 +53,15 @@ export default function About() {
                 { val: "98%", label: "Client Retention Rate" },
               ].map((s) => (
                 <div key={s.label}>
-                  <div className="text-3xl font-black text-white">{s.val}</div>
-                  <div className="text-white/28 text-sm mt-1">{s.label}</div>
+                  <div className="text-3xl font-black text-[#1a2761]">{s.val}</div>
+                  <div className="text-[#1a2761]/40 text-sm mt-1">{s.label}</div>
                 </div>
               ))}
             </div>
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 bg-white text-[#03060f] font-bold text-sm px-6 py-3.5 rounded-full hover:bg-[#1E6FCC] hover:text-white transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-white text-[#1a2761] font-bold text-sm px-6 py-3.5 rounded-full hover:bg-[#1E6FCC] hover:text-white transition-all duration-200"
             >
               Let&apos;s Talk About Your Business <ArrowRight size={15} />
             </a>
@@ -88,7 +88,7 @@ export default function About() {
                   <Icon size={18} className="text-[#1E6FCC]" />
                 </div>
                 <div className="font-bold text-white text-sm mb-1.5">{label}</div>
-                <div className="text-white/32 text-xs leading-relaxed">{desc}</div>
+                <div className="text-[#1a2761]/50 text-xs leading-relaxed">{desc}</div>
               </motion.div>
             ))}
           </motion.div>

@@ -52,7 +52,7 @@ export default function Services() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="services" className="py-28 bg-[#03060f] relative">
+    <section id="services" className="py-28 bg-white relative">
       <div className="absolute inset-0 grid-bg opacity-50 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
@@ -66,12 +66,12 @@ export default function Services() {
         >
           <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">What We Do</p>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight max-w-xl">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1a2761] leading-tight max-w-xl">
               Six ways we put
               <br />
               <span className="gradient-text">your brand on the map.</span>
             </h2>
-            <p className="text-white/38 text-base max-w-sm leading-relaxed">
+            <p className="text-[#1a2761]/50 text-base max-w-sm leading-relaxed">
               Most agencies specialize in one thing. We cover every channel —
               so your marketing works together, not in silos.
             </p>
@@ -79,7 +79,7 @@ export default function Services() {
         </motion.div>
 
         {/* Accordion */}
-        <div className="border-t border-white/8">
+        <div className="border-t border-gray-200">
           {services.map((svc, i) => {
             const Icon = svc.icon;
             const isOpen = open === i;
@@ -90,27 +90,27 @@ export default function Services() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06 }}
-                className={`border-b border-white/8 transition-colors duration-200 ${isOpen ? "bg-white/2" : "hover:bg-white/[0.015]"}`}
+                className={`border-b border-gray-200 transition-colors duration-200 ${isOpen ? "bg-[#1a2761]/3" : "hover:bg-[#1a2761]/[0.02]"}`}
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
                   className="w-full flex items-center gap-5 px-2 py-6 text-left group"
                 >
-                  <span className={`text-xs font-mono font-bold tracking-widest w-10 shrink-0 transition-colors ${isOpen ? "text-[#1E6FCC]" : "text-white/18 group-hover:text-white/35"}`}>
+                  <span className={`text-xs font-mono font-bold tracking-widest w-10 shrink-0 transition-colors ${isOpen ? "text-[#1E6FCC]" : "text-[#1a2761]/30 group-hover:text-[#1a2761]/60"}`}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1E6FCC]" : "bg-white/5 group-hover:bg-white/8"}`}>
-                    <Icon size={18} className={isOpen ? "text-white" : "text-white/45"} />
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "bg-[#1E6FCC]" : "bg-[#1a2761]/5 group-hover:bg-[#1a2761]/10"}`}>
+                    <Icon size={18} className={isOpen ? "text-white" : "text-[#1a2761]/50"} />
                   </div>
                   <div className="flex-1 flex items-center justify-between gap-4">
-                    <h3 className={`text-lg font-bold transition-colors duration-200 ${isOpen ? "text-white" : "text-white/65 group-hover:text-white"}`}>
+                    <h3 className={`text-lg font-bold transition-colors duration-200 ${isOpen ? "text-white" : "text-[#1a2761]/70 group-hover:text-[#1a2761]"}`}>
                       {svc.title}
                     </h3>
-                    <span className="text-xs text-white/18 font-mono font-bold tracking-widest hidden sm:block shrink-0">
+                    <span className="text-xs text-[#1a2761]/30 font-mono font-bold tracking-widest hidden sm:block shrink-0">
                       {svc.tag}
                     </span>
                   </div>
-                  <div className={`w-7 h-7 rounded-full border flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "border-[#1E6FCC] text-[#1E6FCC]" : "border-white/10 text-white/28"}`}>
+                  <div className={`w-7 h-7 rounded-full border flex items-center justify-center shrink-0 transition-all duration-300 ${isOpen ? "border-[#1E6FCC] text-[#1E6FCC]" : "border-gray-200 text-[#1a2761]/35"}`}>
                     {isOpen ? <Minus size={13} /> : <Plus size={13} />}
                   </div>
                 </button>
@@ -125,12 +125,12 @@ export default function Services() {
                       className="overflow-hidden"
                     >
                       <div className="pl-[76px] pr-12 pb-8 flex flex-col sm:flex-row gap-10">
-                        <p className="text-white/42 text-sm leading-[1.85] flex-1 max-w-xl">
+                        <p className="text-[#1a2761]/55 text-sm leading-[1.85] flex-1 max-w-xl">
                           {svc.desc}
                         </p>
                         <ul className="flex-shrink-0 sm:w-56 grid grid-cols-1 gap-2.5">
                           {svc.features.map((f) => (
-                            <li key={f} className="flex items-start gap-2.5 text-sm text-white/50">
+                            <li key={f} className="flex items-start gap-2.5 text-sm text-[#1a2761]/60">
                               <div className="w-1.5 h-1.5 rounded-full bg-[#1E6FCC] shrink-0 mt-1.5" />
                               {f}
                             </li>
