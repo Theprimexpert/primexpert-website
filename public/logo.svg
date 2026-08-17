@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="60" fill="white"/>
+  <!-- P letter -->
+  <path d="M25 30 L25 90 L35 90 L35 65 L55 65 C68 65 76 57 76 47.5 C76 38 68 30 55 30 Z M35 40 L55 40 C62 40 66 43.5 66 47.5 C66 51.5 62 55 55 55 L35 55 Z" fill="#1B2A6B"/>
+  <!-- X letter - right side -->
+  <line x1="70" y1="30" x2="95" y2="90" stroke="#8a9bb0" stroke-width="10" stroke-linecap="round"/>
+  <line x1="95" y1="30" x2="70" y2="90" stroke="#8a9bb0" stroke-width="10" stroke-linecap="round"/>
+  <!-- Blue accent arrow on X -->
+  <path d="M80 45 L95 30 L95 50 Z" fill="#3B9FD4" opacity="0.9"/>
+</svg>
