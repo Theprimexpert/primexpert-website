@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="relative w-9 h-9">
+              <div className="relative w-9 h-9 rounded-lg overflow-hidden bg-white p-0.5">
                 <Image src="/logo.jpg" alt="PrimeXpert" fill className="object-contain" />
               </div>
               <span className="font-bold text-lg text-white">

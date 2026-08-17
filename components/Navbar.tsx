@@ -33,7 +33,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2.5 group">
-            <div className="relative w-9 h-9">
+            <div className="relative w-9 h-9 rounded-lg overflow-hidden bg-white p-0.5">
               <Image src="/logo.jpg" alt="PrimeXpert" fill className="object-contain" />
             </div>
             <span className="font-bold text-lg tracking-tight text-white">
