@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Services from "@/components/Services";
 import About from "@/components/About";
+import LocalVisibility from "@/components/LocalVisibility";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
@@ -17,6 +18,7 @@ export default function Home() {
         <Marquee />
         <Services />
         <About />
+        <LocalVisibility />
         <WhyUs />
         <Testimonials />
         <Contact />

@@ -1,7 +1,7 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { Search, Share2, BarChart2, Code2, Palette, Headphones, MapPin, Plus, Minus } from "lucide-react";
+import { Search, Share2, BarChart2, Code2, Palette, Headphones, Plus, Minus } from "lucide-react";
 
 const services = [
   {
@@ -46,21 +46,6 @@ const services = [
     desc: "Every call you miss is a customer who called your competitor next. Our professional answering team handles every inbound call — day, night, weekend, or holiday — capturing lead details, answering common questions, and booking appointments on your behalf. You get every opportunity. You miss nothing.",
     features: ["Live Answering 24 Hours, 7 Days", "Lead Qualification & Capture", "Appointment Scheduling", "Custom Call Scripts for Your Business", "After-Hours & Overflow Coverage"],
   },
-  {
-    icon: MapPin,
-    title: "Local Visibility & Digital Growth",
-    tag: "LOCAL",
-    desc: "Ranking on Google isn't enough anymore — customers find businesses through AI search engines, Google Maps, Apple Maps, Yelp, and a dozen other platforms before they ever type a query into a search bar. We help businesses improve their online visibility and reach more local customers by building and optimizing your presence everywhere they're already looking. Our goal is simple: get your business found, trusted, and chosen by more customers online.",
-    features: [
-      "AEO & GEO Optimization – Improve visibility across AI search and answer engines",
-      "Google Business Profile & Google Maps – Optimize your profile and strengthen local search presence",
-      "Apple Maps – Ensure accurate business information and local visibility",
-      "Yelp & Yellow Pages – Build and optimize business listings",
-      "MapQuest – Improve location-based business visibility",
-      "Better Business Bureau (BBB) – Maintain a strong and trustworthy business presence",
-      "Social Media Optimization – Strengthen your presence across major social media platforms",
-    ],
-  },
 ];
 
 export default function Services() {
@@ -82,7 +67,7 @@ export default function Services() {
           <p className="text-[#1E6FCC] text-sm font-semibold uppercase tracking-widest mb-4">What We Do</p>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1a2761] leading-tight max-w-xl">
-              Seven ways we put
+              Six ways we put
               <br />
               <span className="gradient-text">your brand on the map.</span>
             </h2>
