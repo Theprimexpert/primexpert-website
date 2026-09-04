@@ -64,7 +64,7 @@ export default function Contact() {
             className="lg:w-72 space-y-3 shrink-0"
           >
             {[
-              { icon: Phone, label: "Call Us Directly", value: "+1 (443) 510-8100", href: "tel:+14435108100" },
+              { icon: Phone, label: "Call Us Directly", value: "+1 (802) 266-0003", href: "tel:+18022660003" },
               { icon: MapPin, label: "Our Office", value: "110 Margaret St\nBurkburnett, TX 76354", href: "#" },
               { icon: Mail, label: "Email Us", value: "info@primexpert.com", href: "mailto:info@primexpert.com" },
             ].map(({ icon: Icon, label, value, href }) => (

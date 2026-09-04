@@ -30,8 +30,8 @@ export default function Footer() {
               increase visibility, and achieve measurable results online.
             </p>
             <div className="space-y-2.5">
-              <a href="tel:+14435108100" className="flex items-center gap-2.5 text-white/35 hover:text-[#1E6FCC] text-sm transition-colors">
-                <Phone size={13} /> +1 (443) 510-8100
+              <a href="tel:+18022660003" className="flex items-center gap-2.5 text-white/35 hover:text-[#1E6FCC] text-sm transition-colors">
+                <Phone size={13} /> +1 (802) 266-0003
               </a>
               <div className="flex items-start gap-2.5 text-white/35 text-sm">
                 <MapPin size={13} className="mt-0.5 shrink-0" />

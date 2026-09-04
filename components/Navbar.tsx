@@ -49,10 +49,10 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="tel:+14435108100"
+            <a href="tel:+18022660003"
               className={`flex items-center gap-2 text-sm transition-colors hover:text-[#1E6FCC] ${scrolled ? "text-[#1a2761]/60" : "text-white/60"}`}>
               <Phone size={13} />
-              (443) 510-8100
+              (802) 266-0003
             </a>
             <a href="#contact"
               className="bg-[#1E6FCC] hover:bg-[#1558a8] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg">
